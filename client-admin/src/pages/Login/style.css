@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'CustomFont';
+}
+:root{
+    --RedRGBA0: rgba(208, 21, 34, 0.8)
+}
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../../assets//fonts/Roboto-Regular.ttf');
+}
+.page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(25, 25, 25, 0.89), rgba(25, 25, 25, 0.89)), url('../../assets/images/bg.jpg');
+}
+.login-form{
+    background-color: white;
+    width: 30em;
+    height: 30em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgba(52, 51, 51, 0.89);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+input{
+    width: 80%;
+    height: 50px;
+    text-align: left;
+    padding:  2em;
+    font-size:  0.75em;
+    margin: 10px;
+    border:none;
+    border-bottom: 1px solid #000;
+
+}
+input:focus{
+    outline: none;
+    border-bottom: 1px solid var(--RedRGBA0);
+}
+.button{
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.button:hover{
+    background-color: var(--RedRGBA0);
+}

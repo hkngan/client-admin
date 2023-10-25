@@ -1,0 +1,20 @@
+
+:root{
+
+}
+.wrapperSidebar{
+    width: 70px;
+    height: 100vh;
+    border-right: 1px solid #323131;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    /* z-index: 10; */
+    display: flex;
+   
+}
+.menu-item{
+    text-decoration: none;
+}

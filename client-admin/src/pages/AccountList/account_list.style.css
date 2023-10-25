@@ -1,0 +1,21 @@
+
+  .button-container{
+    border: none;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: transform 0.3s
+
+  }
+  .button-container:hover{
+    transform: scale(1.1);
+
+    
+  }
+  .icon-buton{
+    height: 20px;
+    width: 20px;
+  }
+  .icon-buton:hover{
+    color: rgba(208, 21, 34, 0.8);
+  }
