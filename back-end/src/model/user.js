@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -33,6 +32,10 @@ const userSchema = new mongoose.Schema({
 
 
 })
-
+// userSchema.method.generateToken = function () {
+//     return JWT.sign({_id: this._id}, process.env.JWT_SECRET, {
+//         expiresIn: '2d'
+//     })
+// }
 const user = mongoose.model('user', userSchema)
 module.exports = user

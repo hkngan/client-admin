@@ -1,12 +1,13 @@
 const { hashPassword, comparePassword } = require('../../helper/authenticationHelper');
 const User = require('../../model/user')
+const order = require('..//../model/order')
 const JWT = require('jsonwebtoken')
 var {expressjwt: jwt} = require('express-jwt')
+const Stripe = require('stripe')
 
-const requireSignin = jwt({
-    secret: process.env.JWT_SECRET,
-    algorithms: ['HS256']
-})
+const stripe = Stripe(process.env.STRIPE_SECRET_KEY)
+
+
 const registerController = async (req, res) => {
     try {
         const {name, email, phone_number, password} = req.body;
@@ -88,7 +89,9 @@ const loginController = async (req, res) => {
             expiresIn: '7d'
         })
         user.password = undefined 
-        res.status(200).send({
+        res.status(200).cookie("token", token, {
+            expires: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000)
+        }).send({
             success: true,
             message: "Login successfully",
             user,
@@ -105,5 +108,51 @@ const loginController = async (req, res) => {
     }
 }
 
+const paymentController = async (req, res) => {
+    try {
+        const {itemInfo, theater, room, date_start, time, totalAmount, combo } = req.body
+        if(!itemInfo || ! theater || !room ||!date_start||!time || !totalAmount){
+            return res.status(400).send({
+                success: false,
+                message: 'Please enter all fields'
+            })
+        }
+        const saveData = await order({
+            itemInfo,combo, theater, room, date_start,time, totalAmount, user: req.user._id,
 
-module.exports = {registerController, loginController, requireSignin}
+        }).save()
+        const paymentIntent = await stripe.paymentIntents.create({
+            amount: Number(totalAmount)*100,
+            currency: 'usd',
+            payment_method_types: ["card"],
+            metadata: { saveData: JSON.stringify(saveData) }
+        })
+        const clientSecret = paymentIntent.client_secret;
+        res.json({ message: "Payment initiated", clientSecret });
+        
+    } catch (error) {
+        console.log('Error in paymentController', error)
+        res.status(500).send({
+            success: false,
+            message: 'Error in paymentController',
+        })
+    }
+}
+
+const getOrderController = async (req, res) => {
+    try {
+        const {id} = req.params
+        const tickets = await order.find({ user: id }); // Sử dụng `find` thay vì `findById`
+        if (!tickets.length) {
+            return res.status(404).send({
+                success: false,
+                message: "Tickets not found"
+            });
+        }
+        console.log(tickets)
+        return res.status(200).send({tickets})
+    } catch (error) {
+        console.error('Error in getOrderController func', error)
+    }
+}
+module.exports = {registerController, loginController, paymentController, getOrderController}
