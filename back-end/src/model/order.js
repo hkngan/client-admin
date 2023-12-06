@@ -62,8 +62,11 @@ const orderSchema = mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'user',
         require: true
-    }
-    
+    },
+    createAt: {
+        type: Date,
+        default: Date.now
+    },
 },
 {timestamp: true}
 )

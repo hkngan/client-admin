@@ -6,7 +6,14 @@ var {expressjwt: jwt} = require('express-jwt')
 const Stripe = require('stripe')
 
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY)
+const { Configuration, OpenAIApi } = require("openai");
+const fs = require('fs')
 
+
+const configuration = new Configuration({
+    apiKey: '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',
+  });
+const openai = new OpenAIApi(configuration);
 
 const registerController = async (req, res) => {
     try {
@@ -107,7 +114,33 @@ const loginController = async (req, res) => {
         })
     }
 }
+const updateInformationController = async (req, res) => {
+    try {
+        // console.log(req.params.id)
+         const info = await User.findById(req.params.id)
+         if(!info){
+             return res.status(404).send({
+                 success: false,
+                 message: "user not found"
+             })
+         }
+         const {name} = req.body
+         if(name) info.name = name
 
+         await info.save()
+         console.log("updated", info)
+        return res.status(200).send({ 
+            success: true,
+            message: `Updated user with id: ${req.params.id}`,
+        });
+    } catch (error) {
+        console.log("Error in updateInformationController func", error);
+        return res.status(500).send({ 
+            success: false,
+            message: 'Error in updateInformationController func'
+        });
+    }
+}
 const paymentController = async (req, res) => {
     try {
         const {itemInfo, theater, room, date_start, time, totalAmount, combo } = req.body
@@ -124,7 +157,9 @@ const paymentController = async (req, res) => {
         const paymentIntent = await stripe.paymentIntents.create({
             amount: Number(totalAmount)*100,
             currency: 'usd',
-            payment_method_types: ["card"],
+            automatic_payment_methods: {
+                enabled: true,
+              },
             metadata: { saveData: JSON.stringify(saveData) }
         })
         const clientSecret = paymentIntent.client_secret;
@@ -142,8 +177,8 @@ const paymentController = async (req, res) => {
 const getOrderController = async (req, res) => {
     try {
         const {id} = req.params
-        const tickets = await order.find({ user: id }); // Sử dụng `find` thay vì `findById`
-        if (!tickets.length) {
+        const tickets = await order.find({ user: id });
+        if (tickets.length < 0) {
             return res.status(404).send({
                 success: false,
                 message: "Tickets not found"
@@ -155,4 +190,49 @@ const getOrderController = async (req, res) => {
         console.error('Error in getOrderController func', error)
     }
 }
-module.exports = {registerController, loginController, paymentController, getOrderController}
+
+const fineTunedChatController = async (req, res) => {
+    try {
+        const userInput = req.body.userInput;
+        console.log("Input:", req.body.userInput)
+        const comp = await openai.createCompletion({
+            model: 'davinci:ft-personal-2023-12-04-09-37-37',
+            prompt: userInput,
+            max_tokens: 210
+        });
+        if (comp.data) {
+            const data = comp.data.choices
+            console.log('choices: ', data)
+            res.status(200).send({
+                success: true,
+                data
+            })
+        }
+    } catch (error) {
+        console.error('error in fineTunedChatController', error)
+        return res.status(500).send({
+            success: false,
+            message: "error in fineTunedChatController",
+            error
+        })
+    }
+}
+const getUserController = async(req, res) => {
+    try {
+        const info = await User.findById(req.params.id)
+         if(!info){
+             return res.status(404).send({
+                 success: false,
+                 message: "user not found"
+             })
+         }
+        return res.status(200).send({
+            success: true,
+            message: 'User list: ',
+            info
+        })
+    } catch (error) {
+        console.log('Error in getUserController func', error)
+    }
+}
+module.exports = {registerController, loginController, paymentController, getOrderController, fineTunedChatController, updateInformationController, getUserController}

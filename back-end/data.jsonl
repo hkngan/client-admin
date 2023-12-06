@@ -1,0 +1,131 @@
+{"prompt":"Hi","completion":"Hi there, what can I do for you?\n"}
+{"prompt":"Hello","completion":"Hi there, what can I do for you?\n"}
+{"prompt":"Hey","completion":"Hi there, what can I do for you?\n"}
+{"prompt":"Is anyone there?","completion":"Hi there, what can I do for you?\n"}
+{"prompt":"Hi","completion":"Hi there, how can I help?\n"}
+{"prompt":"Hello","completion":"Hi there, how can I help?\n"}
+{"prompt":"Hey","completion":"Hi there, how can I help?\n"}
+{"prompt":"Is anyone there?","completion":"Hi there, how can I help?\n"}
+{"prompt":"Hi","completion":"Hello, thanks for visiting\n"}
+{"prompt":"Hello","completion":"Hello, thanks for visiting\n"}
+{"prompt":"Hey","completion":"Hello, thanks for visiting\n"}
+{"prompt":"Is anyone there?","completion":"Hello, thanks for visiting\n"}
+{"prompt":"Bye","completion":"See you later, thanks for visiting\n"}
+{"prompt":"See you later","completion":"See you later, thanks for visiting\n"}
+{"prompt":"Goodbye","completion":"See you later, thanks for visiting\n"}
+{"prompt":"Bye","completion":"Have a nice day\n"}
+{"prompt":"See you later","completion":"Have a nice day\n"}
+{"prompt":"Goodbye","completion":"Have a nice day\n"}
+{"prompt":"Bye","completion":"Bye! Come back again soon.\n"}
+{"prompt":"See you later","completion":"Bye! Come back again soon.\n"}
+{"prompt":"Goodbye","completion":"Bye! Come back again soon.\n"}
+{"prompt":"Thanks","completion":"Happy to help!\n"}
+{"prompt":"Thank you","completion":"Happy to help!\n"}
+{"prompt":"That's helpful","completion":"Happy to help!\n"}
+{"prompt":"Thank's a lot!","completion":"Happy to help!\n"}
+{"prompt":"Thanks","completion":"Any time!!\n"}
+{"prompt":"Thank you","completion":"Any time!!\n"}
+{"prompt":"That's helpful","completion":"Any time!!\n"}
+{"prompt":"Thank's a lot!","completion":"Any time!!\n"}
+{"prompt":"Thanks","completion":"My pleasure\n"}
+{"prompt":"Thank you","completion":"My pleasure\n"}
+{"prompt":"That's helpful","completion":"My pleasure\n"}
+{"prompt":"Thank's a lot!","completion":"My pleasure\n"}
+{"prompt":"Do you take credit cards?","completion":"We accept VISA, Mastercard and Paypal\n"}
+{"prompt":"Do you accept Mastercard?","completion":"We accept VISA, Mastercard and Paypal\n"}
+{"prompt":"Can I pay with Paypal?","completion":"We accept VISA, Mastercard and Paypal\n"}
+{"prompt":"Are you cash only?","completion":"We accept VISA, Mastercard and Paypal\n"}
+{"prompt":"Do you take credit cards?","completion":"We accept most major credit cards, and Paypal\n"}
+{"prompt":"Do you accept Mastercard?","completion":"We accept most major credit cards, and Paypal\n"}
+{"prompt":"Can I pay with Paypal?","completion":"We accept most major credit cards, and Paypal\n"}
+{"prompt":"Are you cash only?","completion":"We accept most major credit cards, and Paypal\n"}
+{"prompt":"What movies are the theaters showing?","completion":"Movies now playing at the cinema: PHIM ĐIỆN ẢNH THÁM TỬ LỪNG DANH CONAN: TÀU NGẦM SẮT MÀU ĐEN,  GIAO LỘ 8675,  QUỶ ÁM: TÍN ĐỒ, CÚ MÁY ĂN TIỀN, ÁC QUỶ MA SƠ II, THANH GƯƠM TRỪ TÀ, TÌNH BẠN DIỆU KỲ, VẦNG TRĂNG MÁU, NGƯỜI DƠI BẮT ĐẦU (CHIẾU LẠI)\n"}
+{"prompt":"Which movies are on screen at the moment?","completion":"Movies now playing at the cinema: PHIM ĐIỆN ẢNH THÁM TỬ LỪNG DANH CONAN: TÀU NGẦM SẮT MÀU ĐEN,  GIAO LỘ 8675,  QUỶ ÁM: TÍN ĐỒ, CÚ MÁY ĂN TIỀN, ÁC QUỶ MA SƠ II, THANH GƯƠM TRỪ TÀ, TÌNH BẠN DIỆU KỲ, VẦNG TRĂNG MÁU, NGƯỜI DƠI BẮT ĐẦU (CHIẾU LẠI)\n"}
+{"prompt":"Could you tell me about the movies being screened right now?","completion":"Movies now playing at the cinema: PHIM ĐIỆN ẢNH THÁM TỬ LỪNG DANH CONAN: TÀU NGẦM SẮT MÀU ĐEN,  GIAO LỘ 8675,  QUỶ ÁM: TÍN ĐỒ, CÚ MÁY ĂN TIỀN, ÁC QUỶ MA SƠ II, THANH GƯƠM TRỪ TÀ, TÌNH BẠN DIỆU KỲ, VẦNG TRĂNG MÁU, NGƯỜI DƠI BẮT ĐẦU (CHIẾU LẠI)\n"}
+{"prompt":"What movies are the theaters showing?","completion":"Now screening at cinemas: PHIM ĐIỆN ẢNH THÁM TỬ LỪNG DANH CONAN: TÀU NGẦM SẮT MÀU ĐEN,  GIAO LỘ 8675,  QUỶ ÁM: TÍN ĐỒ, CÚ MÁY ĂN TIỀN, ÁC QUỶ MA SƠ II, THANH GƯƠM TRỪ TÀ, TÌNH BẠN DIỆU KỲ, VẦNG TRĂNG MÁU, NGƯỜI DƠI BẮT ĐẦU (CHIẾU LẠI)\n"}
+{"prompt":"Which movies are on screen at the moment?","completion":"Now screening at cinemas: PHIM ĐIỆN ẢNH THÁM TỬ LỪNG DANH CONAN: TÀU NGẦM SẮT MÀU ĐEN,  GIAO LỘ 8675,  QUỶ ÁM: TÍN ĐỒ, CÚ MÁY ĂN TIỀN, ÁC QUỶ MA SƠ II, THANH GƯƠM TRỪ TÀ, TÌNH BẠN DIỆU KỲ, VẦNG TRĂNG MÁU, NGƯỜI DƠI BẮT ĐẦU (CHIẾU LẠI)\n"}
+{"prompt":"Could you tell me about the movies being screened right now?","completion":"Now screening at cinemas: PHIM ĐIỆN ẢNH THÁM TỬ LỪNG DANH CONAN: TÀU NGẦM SẮT MÀU ĐEN,  GIAO LỘ 8675,  QUỶ ÁM: TÍN ĐỒ, CÚ MÁY ĂN TIỀN, ÁC QUỶ MA SƠ II, THANH GƯƠM TRỪ TÀ, TÌNH BẠN DIỆU KỲ, VẦNG TRĂNG MÁU, NGƯỜI DƠI BẮT ĐẦU (CHIẾU LẠI)\n"}
+{"prompt":"What movies are the theaters showing?","completion":"Now screening at cinemas: PHIM ĐIỆN ẢNH THÁM TỬ LỪNG DANH CONAN: TÀU NGẦM SẮT MÀU ĐEN,  GIAO LỘ 8675,  QUỶ ÁM: TÍN ĐỒ, CÚ MÁY ĂN TIỀN, ÁC QUỶ MA SƠ II, THANH GƯƠM TRỪ TÀ, TÌNH BẠN DIỆU KỲ, VẦNG TRĂNG MÁU, NGƯỜI DƠI BẮT ĐẦU (CHIẾU LẠI)\n"}
+{"prompt":"Which movies are on screen at the moment?","completion":"Current showings at movie theaters: PHIM ĐIỆN ẢNH THÁM TỬ LỪNG DANH CONAN: TÀU NGẦM SẮT MÀU ĐEN,  GIAO LỘ 8675,  QUỶ ÁM: TÍN ĐỒ, CÚ MÁY ĂN TIỀN, ÁC QUỶ MA SƠ II, THANH GƯƠM TRỪ TÀ, TÌNH BẠN DIỆU KỲ, VẦNG TRĂNG MÁU, NGƯỜI DƠI BẮT ĐẦU (CHIẾU LẠI)\n"}
+{"prompt":"Could you tell me about the movies being screened right now?","completion":"Current showings at movie theaters: PHIM ĐIỆN ẢNH THÁM TỬ LỪNG DANH CONAN: TÀU NGẦM SẮT MÀU ĐEN,  GIAO LỘ 8675,  QUỶ ÁM: TÍN ĐỒ, CÚ MÁY ĂN TIỀN, ÁC QUỶ MA SƠ II, THANH GƯƠM TRỪ TÀ, TÌNH BẠN DIỆU KỲ, VẦNG TRĂNG MÁU, NGƯỜI DƠI BẮT ĐẦU (CHIẾU LẠI)\n"}
+{"prompt":"What movies are the theaters showing?","completion":"Current showings at movie theaters: PHIM ĐIỆN ẢNH THÁM TỬ LỪNG DANH CONAN: TÀU NGẦM SẮT MÀU ĐEN,  GIAO LỘ 8675,  QUỶ ÁM: TÍN ĐỒ, CÚ MÁY ĂN TIỀN, ÁC QUỶ MA SƠ II, THANH GƯƠM TRỪ TÀ, TÌNH BẠN DIỆU KỲ, VẦNG TRĂNG MÁU, NGƯỜI DƠI BẮT ĐẦU (CHIẾU LẠI)\n"}
+{"prompt":"How to buy ticket movie?","completion":"Of course, you select the movie you want to watch -> choose the cinema -> select the showtime -> choose your seats -> buy popcorn and drinks combo -> proceed to payment\n"}
+{"prompt":"Can you guide me on how to get a ticket for a movie?","completion":"Of course, you select the movie you want to watch -> choose the cinema -> select the showtime -> choose your seats -> buy popcorn and drinks combo -> proceed to payment\n"}
+{"prompt":"What are the steps to buy a movie ticket?","completion":"Of course, you select the movie you want to watch -> choose the cinema -> select the showtime -> choose your seats -> buy popcorn and drinks combo -> proceed to payment\n"}
+{"prompt":"Could you tell me the way to purchase movie tickets?","completion":"Of course, you select the movie you want to watch -> choose the cinema -> select the showtime -> choose your seats -> buy popcorn and drinks combo -> proceed to payment\n"}
+{"prompt":"How to buy ticket movie?","completion":"Absolutely, start by choosing your desired movie, then select which cinema to visit, pick the screening time, select your preferred seats, consider adding a snack combo, and lastly, pay for your tickets.\n"}
+{"prompt":"Can you guide me on how to get a ticket for a movie?","completion":"Absolutely, start by choosing your desired movie, then select which cinema to visit, pick the screening time, select your preferred seats, consider adding a snack combo, and lastly, pay for your tickets.\n"}
+{"prompt":"What are the steps to buy a movie ticket?","completion":"Absolutely, start by choosing your desired movie, then select which cinema to visit, pick the screening time, select your preferred seats, consider adding a snack combo, and lastly, pay for your tickets.\n"}
+{"prompt":"Could you tell me the way to purchase movie tickets?","completion":"Absolutely, start by choosing your desired movie, then select which cinema to visit, pick the screening time, select your preferred seats, consider adding a snack combo, and lastly, pay for your tickets.\n"}
+{"prompt":"How to buy ticket movie?","completion":"Sure, first pick the movie you'd like to see, then select a theater, choose a showtime, pick your seats, add any popcorn or drinks combo if desired, and finally, make your payment.\n"}
+{"prompt":"Can you guide me on how to get a ticket for a movie?","completion":"Sure, first pick the movie you'd like to see, then select a theater, choose a showtime, pick your seats, add any popcorn or drinks combo if desired, and finally, make your payment.\n"}
+{"prompt":"What are the steps to buy a movie ticket?","completion":"Sure, first pick the movie you'd like to see, then select a theater, choose a showtime, pick your seats, add any popcorn or drinks combo if desired, and finally, make your payment.\n"}
+{"prompt":"Could you tell me the way to purchase movie tickets?","completion":"Sure, first pick the movie you'd like to see, then select a theater, choose a showtime, pick your seats, add any popcorn or drinks combo if desired, and finally, make your payment.\n"}
+{"prompt":"How to buy ticket movie?","completion":"Yes, begin by selecting your movie, then choose the cinema location, decide on the showtime, choose your seating, add a popcorn and drink combo if you want, and proceed with the payment process.\n"}
+{"prompt":"Can you guide me on how to get a ticket for a movie?","completion":"Yes, begin by selecting your movie, then choose the cinema location, decide on the showtime, choose your seating, add a popcorn and drink combo if you want, and proceed with the payment process.\n"}
+{"prompt":"What are the steps to buy a movie ticket?","completion":"Yes, begin by selecting your movie, then choose the cinema location, decide on the showtime, choose your seating, add a popcorn and drink combo if you want, and proceed with the payment process.\n"}
+{"prompt":"Could you tell me the way to purchase movie tickets?","completion":"Yes, begin by selecting your movie, then choose the cinema location, decide on the showtime, choose your seating, add a popcorn and drink combo if you want, and proceed with the payment process.\n"}
+{"prompt":"Is a Cinemagic theater available in Can Tho now?","completion":"Yes, we have Cinemagic Sense City, Cinemagic Vincom Hùng Vương, Cinemagic Vincom Xuân Khánh\n"}
+{"prompt":"Is a Cinemagic theater available in Can Tho now?","completion":"Certainly, you can find Cinemagic at Sense City, Vincom Hùng Vương, and Vincom Xuân Khánh in Can Tho.\n"}
+{"prompt":"Is a Cinemagic theater available in Can Tho now?","completion":"In Can Tho, Cinemagic locations include Sense City, Vincom Hùng Vương, and Vincom Xuân Khánh\n"}
+{"prompt":"Is a Cinemagic theater available in Can Tho now?","completion":"Cinemagic is available in Can Tho at three locations: Sense City, Vincom Hùng Vương, and Vincom Xuân Khánh\n"}
+{"prompt":"Is there any CineMagic theater in Can Tho currently?","completion":"Yes, we have Cinemagic Sense City, Cinemagic Vincom Hùng Vương, Cinemagic Vincom Xuân Khánh\n"}
+{"prompt":"Is there any CineMagic theater in Can Tho currently?","completion":"Certainly, you can find Cinemagic at Sense City, Vincom Hùng Vương, and Vincom Xuân Khánh in Can Tho.\n"}
+{"prompt":"Is there any CineMagic theater in Can Tho currently?","completion":"In Can Tho, Cinemagic locations include Sense City, Vincom Hùng Vương, and Vincom Xuân Khánh\n"}
+{"prompt":"Is there any CineMagic theater in Can Tho currently?","completion":"Cinemagic is available in Can Tho at three locations: Sense City, Vincom Hùng Vương, and Vincom Xuân Khánh\n"}
+{"prompt":"Is there any CineMagic location in Can Tho right now?","completion":"Yes, we have Cinemagic Sense City, Cinemagic Vincom Hùng Vương, Cinemagic Vincom Xuân Khánh\n"}
+{"prompt":"Is there any CineMagic location in Can Tho right now?","completion":"Certainly, you can find Cinemagic at Sense City, Vincom Hùng Vương, and Vincom Xuân Khánh in Can Tho.\n"}
+{"prompt":"Is there any CineMagic location in Can Tho right now?","completion":"In Can Tho, Cinemagic locations include Sense City, Vincom Hùng Vương, and Vincom Xuân Khánh\n"}
+{"prompt":"Is there any CineMagic location in Can Tho right now?","completion":"Cinemagic is available in Can Tho at three locations: Sense City, Vincom Hùng Vương, and Vincom Xuân Khánh\n"}
+{"prompt":"Does Can Tho have a CineMagic cinema at the moment?","completion":"Yes, we have Cinemagic Sense City, Cinemagic Vincom Hùng Vương, Cinemagic Vincom Xuân Khánh\n"}
+{"prompt":"Does Can Tho have a CineMagic cinema at the moment?","completion":"Certainly, you can find Cinemagic at Sense City, Vincom Hùng Vương, and Vincom Xuân Khánh in Can Tho.\n"}
+{"prompt":"Does Can Tho have a CineMagic cinema at the moment?","completion":"In Can Tho, Cinemagic locations include Sense City, Vincom Hùng Vương, and Vincom Xuân Khánh\n"}
+{"prompt":"Does Can Tho have a CineMagic cinema at the moment?","completion":"Cinemagic is available in Can Tho at three locations: Sense City, Vincom Hùng Vương, and Vincom Xuân Khánh\n"}
+{"prompt":"Is a Cinemagic theater available in TP. HCM now?","completion":"Yes, we have Cinemagic Thảo Điền Pearl, Cinemagic Aeon Tân Phú, Cinemagic Aeon Bình Tân, Cinemagic Vincom Thủ Đức\n"}
+{"prompt":"Is a Cinemagic theater available in TP. HCM now?","completion":"Certainly, you can find Cinemagic at Thảo Điền Pearl, Aeon Tân Phú, and Vincom Thủ Đức, Aeon Bình Tân in TP. HCM.\n"}
+{"prompt":"Is a Cinemagic theater available in TP. HCM now?","completion":"In TP. HCM, Cinemagic locations include Thảo Điền Pearl, Aeon Tân Phú, and Vincom Thủ Đức, Aeon Bình Tân\n"}
+{"prompt":"Is a Cinemagic theater available in TP. HCM now?","completion":"Cinemagic is available in TP. HCM at three locations: Thảo Điền Pearl, Aeon Tân Phú, and Vincom Thủ Đức, Aeon Bình Tân\n"}
+{"prompt":"Is there any CineMagic theater in TP. HCM currently?","completion":"Yes, we have Cinemagic Thảo Điền Pearl, Cinemagic Aeon Tân Phú, Cinemagic Aeon Bình Tân, Cinemagic Vincom Thủ Đức\n"}
+{"prompt":"Is there any CineMagic theater in TP. HCM currently?","completion":"Certainly, you can find Cinemagic at Thảo Điền Pearl, Aeon Tân Phú, and Vincom Thủ Đức, Aeon Bình Tân in TP. HCM.\n"}
+{"prompt":"Is there any CineMagic theater in TP. HCM currently?","completion":"In TP. HCM, Cinemagic locations include Thảo Điền Pearl, Aeon Tân Phú, and Vincom Thủ Đức, Aeon Bình Tân\n"}
+{"prompt":"Is there any CineMagic theater in TP. HCM currently?","completion":"Cinemagic is available in TP. HCM at three locations: Thảo Điền Pearl, Aeon Tân Phú, and Vincom Thủ Đức, Aeon Bình Tân\n"}
+{"prompt":"Is there any CineMagic location in TP. HCM right now?","completion":"Yes, we have Cinemagic Thảo Điền Pearl, Cinemagic Aeon Tân Phú, Cinemagic Aeon Bình Tân, Cinemagic Vincom Thủ Đức\n"}
+{"prompt":"Is there any CineMagic location in TP. HCM right now?","completion":"Certainly, you can find Cinemagic at Thảo Điền Pearl, Aeon Tân Phú, and Vincom Thủ Đức, Aeon Bình Tân in TP. HCM.\n"}
+{"prompt":"Is there any CineMagic location in TP. HCM right now?","completion":"In TP. HCM, Cinemagic locations include Thảo Điền Pearl, Aeon Tân Phú, and Vincom Thủ Đức, Aeon Bình Tân\n"}
+{"prompt":"Is there any CineMagic location in TP. HCM right now?","completion":"Cinemagic is available in TP. HCM at three locations: Thảo Điền Pearl, Aeon Tân Phú, and Vincom Thủ Đức, Aeon Bình Tân\n"}
+{"prompt":"Does TP. HCM have a CineMagic cinema at the moment?","completion":"Yes, we have Cinemagic Thảo Điền Pearl, Cinemagic Aeon Tân Phú, Cinemagic Aeon Bình Tân, Cinemagic Vincom Thủ Đức\n"}
+{"prompt":"Does TP. HCM have a CineMagic cinema at the moment?","completion":"Certainly, you can find Cinemagic at Thảo Điền Pearl, Aeon Tân Phú, and Vincom Thủ Đức, Aeon Bình Tân in TP. HCM.\n"}
+{"prompt":"Does TP. HCM have a CineMagic cinema at the moment?","completion":"In TP. HCM, Cinemagic locations include Thảo Điền Pearl, Aeon Tân Phú, and Vincom Thủ Đức, Aeon Bình Tân\n"}
+{"prompt":"Does TP. HCM have a CineMagic cinema at the moment?","completion":"Cinemagic is available in TP. HCM at three locations: Thảo Điền Pearl, Aeon Tân Phú, and Vincom Thủ Đức, Aeon Bình Tân\n"}
+{"prompt":"Is a Cinemagic theater available in Hà Nội now?","completion":"Unfortunately, there are no Cinemagic theaters in Hà Nội at the moment.\n"}
+{"prompt":"Is a Cinemagic theater available in Hà Nội now?","completion":"At present, Cinemagic does not operate any theaters in Hà Nội.\n"}
+{"prompt":"Is a Cinemagic theater available in Hà Nội now?","completion":"Currently, there are no Cinemagic locations available in Hà Nội.\n"}
+{"prompt":"Is a Cinemagic theater available in Hà Nội now?","completion":"Sorry, currently Cinemagic does not have any theater in Hà Nội.\n"}
+{"prompt":"Is there any CineMagic theater in Hà Nội currently?","completion":"Unfortunately, there are no Cinemagic theaters in Hà Nội at the moment.\n"}
+{"prompt":"Is there any CineMagic theater in Hà Nội currently?","completion":"At present, Cinemagic does not operate any theaters in Hà Nội.\n"}
+{"prompt":"Is there any CineMagic theater in Hà Nội currently?","completion":"Currently, there are no Cinemagic locations available in Hà Nội.\n"}
+{"prompt":"Is there any CineMagic theater in Hà Nội currently?","completion":"Sorry, currently Cinemagic does not have any theater in Hà Nội.\n"}
+{"prompt":"Is there any CineMagic location in Hà Nội right now?","completion":"Unfortunately, there are no Cinemagic theaters in Hà Nội at the moment.\n"}
+{"prompt":"Is there any CineMagic location in Hà Nội right now?","completion":"At present, Cinemagic does not operate any theaters in Hà Nội.\n"}
+{"prompt":"Is there any CineMagic location in Hà Nội right now?","completion":"Currently, there are no Cinemagic locations available in Hà Nội.\n"}
+{"prompt":"Is there any CineMagic location in Hà Nội right now?","completion":"Sorry, currently Cinemagic does not have any theater in Hà Nội.\n"}
+{"prompt":"Does Hà Nội have a CineMagic cinema at the moment?","completion":"Unfortunately, there are no Cinemagic theaters in Hà Nội at the moment.\n"}
+{"prompt":"Does Hà Nội have a CineMagic cinema at the moment?","completion":"At present, Cinemagic does not operate any theaters in Hà Nội.\n"}
+{"prompt":"Does Hà Nội have a CineMagic cinema at the moment?","completion":"Currently, there are no Cinemagic locations available in Hà Nội.\n"}
+{"prompt":"Does Hà Nội have a CineMagic cinema at the moment?","completion":"Sorry, currently Cinemagic does not have any theater in Hà Nội.\n"}
+{"prompt":"What popcorn and drink combos do you have?","completion":"At Cinemagic, we have Combo 1 which offers a large drink and popcorn (available for Pepsi, 7UP, Mirinda), and Combo 2, which provides 1 popcorn and 2 beverages (includes Pepsi, 7UP, Mirinda).\n"}
+{"prompt":"What are the available popcorn and drink combo deals?","completion":"At Cinemagic, we have Combo 1 which offers a large drink and popcorn (available for Pepsi, 7UP, Mirinda), and Combo 2, which provides 1 popcorn and 2 beverages (includes Pepsi, 7UP, Mirinda).\n"}
+{"prompt":"What popcorn and drink combos do you have?","completion":"Cinemagic's available combos are: Combo 1 with one large drink and popcorn (for Pepsi, 7UP, Mirinda only), and Combo 2 including one popcorn and two drinks (Pepsi, 7UP, Mirinda applicable).\n"}
+{"prompt":"What are the available popcorn and drink combo deals?","completion":"Cinemagic's available combos are: Combo 1 with one large drink and popcorn (for Pepsi, 7UP, Mirinda only), and Combo 2 including one popcorn and two drinks (Pepsi, 7UP, Mirinda applicable).\n"}
+{"prompt":"I want to know about the ticket prices on weekdays and weekends.","completion":"Of course, from Monday to Thursday the ticket price is 65,000 VND, and on Saturday and Sunday, it is 95,000 VND. \n"}
+{"prompt":"Can you tell me the ticket prices for weekdays and weekends?","completion":"Of course, from Monday to Thursday the ticket price is 65,000 VND, and on Saturday and Sunday, it is 95,000 VND. \n"}
+{"prompt":"I'd like to know the pricing for cinema tickets on weekdays compared to the weekend.","completion":"Of course, from Monday to Thursday the ticket price is 65,000 VND, and on Saturday and Sunday, it is 95,000 VND. \n"}
+{"prompt":"I want to know about the ticket prices on weekdays and weekends.","completion":"Sure, the price from Monday to Thursday is 65,000 VND, while on weekends (Saturday and Sunday) it's 95,000 VND.\n"}
+{"prompt":"Can you tell me the ticket prices for weekdays and weekends?","completion":"Sure, the price from Monday to Thursday is 65,000 VND, while on weekends (Saturday and Sunday) it's 95,000 VND.\n"}
+{"prompt":"I'd like to know the pricing for cinema tickets on weekdays compared to the weekend.","completion":"Sure, the price from Monday to Thursday is 65,000 VND, while on weekends (Saturday and Sunday) it's 95,000 VND.\n"}
+{"prompt":"I want to know about the ticket prices on weekdays and weekends.","completion":"Certainly, it's 65,000 VND from Monday to Thursday and 95,000 VND on Saturday and Sunday.\n"}
+{"prompt":"Can you tell me the ticket prices for weekdays and weekends?","completion":"Certainly, it's 65,000 VND from Monday to Thursday and 95,000 VND on Saturday and Sunday.\n"}
+{"prompt":"I'd like to know the pricing for cinema tickets on weekdays compared to the weekend.","completion":"Certainly, it's 65,000 VND from Monday to Thursday and 95,000 VND on Saturday and Sunday.\n"}
+{"prompt":"I want to know about the ticket prices on weekdays and weekends.","completion":"Absolutely, they are 65,000 VND from Monday to Thursday, and the weekend rate for Saturday and Sunday is 95,000 VND.\n"}
+{"prompt":"Can you tell me the ticket prices for weekdays and weekends?","completion":"Absolutely, they are 65,000 VND from Monday to Thursday, and the weekend rate for Saturday and Sunday is 95,000 VND.\n"}
+{"prompt":"I'd like to know the pricing for cinema tickets on weekdays compared to the weekend.","completion":"Absolutely, they are 65,000 VND from Monday to Thursday, and the weekend rate for Saturday and Sunday is 95,000 VND.\n"}

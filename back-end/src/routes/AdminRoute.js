@@ -30,7 +30,8 @@ const {
     THONG_TIN_RAP_2,
     THONG_TIN_RAP_1,
     THEM_COMBO,
-    THONG_TIN_COMBO
+    THONG_TIN_COMBO,
+    CAP_NHAT_SUAT_PHIM
 } = require('../controller/admin/AdminController')
 
 
@@ -69,5 +70,6 @@ router.delete('/delete-nowplaying-movie/:id', XOA_PHIM_DANG_CHIEU)
 router.delete('/delete-showtime/:id', XOA_SUAT_CHIEU)
 
 router.put('/update-nowplaying-movie/:id', CAP_NHAT_PHIM_DANG_CHIEU)
+router.put('/update-showtime/:id', CAP_NHAT_SUAT_PHIM)
 
 module.exports = router

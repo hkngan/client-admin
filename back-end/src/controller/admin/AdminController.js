@@ -336,10 +336,10 @@ const THEM_LICH_CHIEU_PHIM_CONTROLLER = async (req, res) => {
       const newshowtime = await new showtime({
         movie_name: selectedMovie,
         theater_name: selectedTheater,
-        room_name: selectedRoom, // This should be room_name instead of room
+        room_name: selectedRoom, 
         day: day,
         time: time,
-        cost: selectedPrice // This should be cost instead of price
+        cost: selectedPrice
     });
     
       const saveShowtime = await newshowtime.save();
@@ -468,17 +468,29 @@ const XOA_PHIM_DANG_CHIEU = async(req,res) => {
 
 const CAP_NHAT_PHIM_DANG_CHIEU = async (req, res) => {
     try {
-        const { id } = req.params;
-        const movie = await nowplaying.findByIdAndUpdate({ _id: id }, req.body, { new: true });
-        if (!movie) {
+        const movie = await nowplaying.findById(req.params.id)
+        if(!movie){
             return res.status(404).send({
                 success: false,
-                message: `Cannot find any movie with id: ${id}`
-            });
+                message: "Movie not found"
+            })
         }
+        const {img, id_movie, movie_name, des, trailer, start_date, time, rate, genres} = req.body
+        if(img) movie.img = img
+        if(id_movie) movie.id_movie = id_movie
+        if(movie_name) movie.movie_name = movie_name
+        if(des) movie.des = des
+        if(trailer) movie.trailer = trailer
+        if(start_date) movie.start_date = start_date
+        if(time) movie.time = time
+        if(rate) movie.rate = rate
+        if(genres) movie.genres = genres
+
+        await movie.save()
+        console.log("updated", movie)
         return res.status(200).send({ 
             success: true,
-            message: `Updated movie with id: ${id}`,
+            message: `Updated movie with id: ${req.params.id}`,
             movie
         });
     } catch (error) {
@@ -741,6 +753,38 @@ const XOA_SUAT_CHIEU = async(req,res) => {
         console.log('Error in XOA_SUAT_CHIEU func', error)
     }
 }
+const CAP_NHAT_SUAT_PHIM = async (req, res) => {
+    try {
+        const showtimes = await showtime.findById(req.params.id)
+        if(!showtimes){
+            return res.status(404).send({
+                success: false,
+                message: "Movie not found"
+            })
+        }
+        const {movie_name, theater_name, room_name, day, time, cost} = req.body
+        if(movie_name) showtimes.movie_name = movie_name
+        if(theater_name) showtimes.theater_name = theater_name
+        if(room_name) showtimes.room_name = des
+        if(day) showtimes.day = day
+        if(time) showtimes.time = time
+        if(cost) showtimes.cost = cost
+
+        await showtimes.save()
+        console.log("updated", showtimes)
+        return res.status(200).send({ 
+            success: true,
+            message: `Updated movie with id: ${req.params.id}`,
+            showtimes
+        });
+    } catch (error) {
+        console.log("Error in CAP_NHAT_SUAT_PHIM func", error);
+        return res.status(500).send({ 
+            success: false,
+            message: 'Error in CAP_NHAT_SUAT_PHIM func'
+        });
+    }
+}
 const DANH_GIA = async (req, res) => {
     try {
         const rateList = await rate.find()
@@ -791,5 +835,6 @@ module.exports = {
     TIM_SUAT_CHIEU,
     THONG_TIN_TP,
     THEM_COMBO,
-    THONG_TIN_COMBO
+    THONG_TIN_COMBO,
+    CAP_NHAT_SUAT_PHIM
 }

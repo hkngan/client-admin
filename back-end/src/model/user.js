@@ -19,12 +19,6 @@ const userSchema = new mongoose.Schema({
         required: true
     },
     verificationToken: String,
-    orders: [
-        {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Order"
-        }
-    ],
     createAt: {
         type: Date,
         default: Date.now
