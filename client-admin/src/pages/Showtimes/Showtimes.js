@@ -53,17 +53,20 @@ const Showtimes = () => {
     }, [selectedShowtimes]);
     return (
         <div>
-            <Table size="sm">
+            <h2 style={{marginTop: 10, textAlign: 'center'}}>Showtime List</h2>
+            <Table size="sm" responsive>
                 <thead>
                     <tr>
                         <th>#</th>
+                        <th>Ngày chiếu</th>
                         <th>Tên phim</th>
                         <th>Tên rạp</th>
                         <th>Phòng</th>
-                        <th>Ngày chiếu</th>
                         <th>Giờ chiếu</th>
                         <th>Giá vé</th>
-                        <th>Sửa</th>
+                        <th style={{
+                                            textAlign: 'center'
+                                        }}>Sửa</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -77,6 +80,18 @@ const Showtimes = () => {
                                         color="#000"
                                         style={{ alignSelf: 'center' }}
                                     />
+                                </th>
+                                <th>
+                                    <div
+                                        style={{
+                                            width: '150px',
+                                            whiteSpace: 'nowrap',
+                                            overflow: 'hidden',
+                                            textOverflow: 'ellipsis',
+                                        }}
+                                    >
+                                        {showtime.day}
+                                    </div>
                                 </th>
                                 <th>
                                 <div
@@ -104,31 +119,19 @@ const Showtimes = () => {
                                 </th>
                                 <th>
                                     <div
-                                        style={{
-                                            width: '150px',
-                                            whiteSpace: 'nowrap',
-                                            overflow: 'hidden',
-                                            textOverflow: 'ellipsis',
-                                        }}
+                                        
                                     >
                                         {showtime.room_name}
                                     </div>
                                 </th>
-                                <th>
-                                    <div
-                                        style={{
+                                <th>{showtime.time}</th>
+                                <th>{showtime.cost}</th>
+                                <th style={{
                                             width: '150px',
                                             whiteSpace: 'nowrap',
                                             overflow: 'hidden',
                                             textOverflow: 'ellipsis',
-                                        }}
-                                    >
-                                        {showtime.day}
-                                    </div>
-                                </th>
-                                <th>{showtime.time}</th>
-                                <th>{showtime.cost}</th>
-                                <th>
+                                        }}>
                                     <button className="button-container">
                                         <FontAwesomeIcon
                                             className="icon-buton"

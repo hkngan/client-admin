@@ -3,7 +3,7 @@
 
 }
 .wrapperSidebar{
-    width: 70px;
+    width: 190px;
     height: 100vh;
     border-right: 1px solid #323131;
     margin: 0;
@@ -17,4 +17,7 @@
 }
 .menu-item{
     text-decoration: none;
+}
+.active{
+    color: red;
 }

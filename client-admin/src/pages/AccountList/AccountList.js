@@ -40,8 +40,9 @@ const AccountList = () => {
         }
     }
     return (
-        <div >
-                <Table responsive>
+        <div className='tableContainer'>
+                <h3 style={{marginTop: 10, textAlign: 'center'}}>User Accounts List</h3>
+                <Table size='sm' responsive>
                     <thead>
                         <tr>
                             <th>#</th>

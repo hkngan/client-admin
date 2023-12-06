@@ -56,7 +56,8 @@ const MovieList = () => {
     // }, [selectedMovie]);
     return (
         <div>
-            <Table size="sm">
+            <h2 style={{marginTop: 10, textAlign: 'center'}}>Movie List</h2>
+            <Table size="sm" responsive>
                 <thead>
                     <tr>
                         <th>#</th>
@@ -65,11 +66,27 @@ const MovieList = () => {
                         <th>Poster</th>
                         <th>Mô tả</th>
                         <th>Trailer</th>
-                        <th>Thể loại</th>
-                        <th>Thời lượng</th>
-                        <th>Khởi chiếu</th>
+                        <th style={{
+                                            width: '150px',
+                                            whiteSpace: 'nowrap',
+                                            overflow: 'hidden',
+                                            textOverflow: 'ellipsis',
+                                        }}>Thể loại</th>
+                        <th style={{
+                                            width: '150px',
+                                            whiteSpace: 'nowrap',
+                                            overflow: 'hidden',
+                                            textOverflow: 'ellipsis',
+                                        }}>Thời lượng</th>
+                        <th style={{
+                                            width: '150px',
+                                            whiteSpace: 'nowrap',
+                                            overflow: 'hidden',
+                                            textOverflow: 'ellipsis',
+                                        }}>Khởi chiếu</th>
                         <th>Rate</th>
-                        <th>Sửa</th>
+                        <th style={{
+                                    textAlign: 'center'}}>Sửa</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -131,9 +148,20 @@ const MovieList = () => {
                                         {nowplaying.trailer}
                                     </div>
                                 </th>
-                                <th>{nowplaying.genres}</th>
-                                <th>{nowplaying.time}</th>
-                                <th>{nowplaying.start_date}</th>
+                                <div
+                                     style={{
+                                            width: '90px'
+                                        }}    
+                                >
+                                    <th>{nowplaying.genres}</th>
+                                </div>
+                                <th >{nowplaying.time}</th>
+                                <th style={{
+                                            width: '150px',
+                                            whiteSpace: 'nowrap',
+                                            overflow: 'hidden',
+                                            textOverflow: 'ellipsis',
+                                        }}>{nowplaying.start_date}</th>
                                 <th>
                                     <div
                                         style={{
@@ -146,7 +174,12 @@ const MovieList = () => {
                                         {nowplaying.rate}
                                     </div>
                                 </th>
-                                <th>
+                                <th style={{
+                                            width: '150px',
+                                            whiteSpace: 'nowrap',
+                                            overflow: 'hidden',
+                                            textOverflow: 'ellipsis',
+                                        }}>
                                     <button className="button-container">
                                         <FontAwesomeIcon
                                             className="icon-buton"

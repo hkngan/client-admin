@@ -72,39 +72,54 @@ const AlertForm = (props) => {
         }
     }, [props.movieData]);
 
-    const handleSubmit = async (e ) => {
+
+    const handleUpdate = async (e) => {
         e.preventDefault();
-
+      
         try {
-            let id = props.movieData._id
-            console.log("id:",id)
-            const formData = new FormData();
-            formData.append('img', img);
-            formData.append('id_movie', id_movie);
-            formData.append('movie_name', movie_name);
-            formData.append('des', des);
-            formData.append('trailer', trailer);
-            formData.append('start_date', start_date);
-            formData.append('time', time);
-            formData.append('rate', selectedRate);
-            formData.append('genres', selectedGenres);
-
-            const res = await axios.putForm(`http://localhost:3001/api/v1/admin/update-nowplaying-movie/${id}`, formData);
-                swal({
-                    title: 'Movie updated!!',
-                    icon: 'success',
-                });
-
-                navigate('/movie-list')
+          let id = props.movieData._id;
+      
+          const data = {
+            img,
+            id_movie,
+            movie_name,
+            des,
+            trailer,
+            start_date,
+            time,
+            rate: selectedRate,
+            genres: selectedGenres,
+          };
+      
+          console.log('Data to be sent:', data);
+      
+          const res = await axios.put(
+            `http://localhost:3001/api/v1/admin/update-nowplaying-movie/${id}`,
+            data,
+            {
+              headers: {
+                'Content-Type': 'application/json',
+              },
+            }
+          );
+      
+          console.log('Updated Data:', res.data);
+      
+          swal({
+            title: 'Movie updated!!',
+            icon: 'success',
+          });
+      
         } catch (error) {
-            console.error('Error in handleSubmit func', error);
-            swal({
-                title: 'An error occurred while processing your request.',
-                icon: 'warning',
-                dangerMode: true,
-            });
+          console.error('Error in handleUpdate func', error);
+          swal({
+            title: 'An error occurred while processing your request.',
+            icon: 'warning',
+            dangerMode: true,
+          });
         }
-    };
+      };
+      
     const handleGenreChange = (e) => {
         const selectedValues = Array.from(e.target.selectedOptions, (option) => option.value);
         setSelectedGenres(selectedValues);
@@ -127,7 +142,7 @@ const AlertForm = (props) => {
                     <Modal.Title id="contained-modal-title-vcenter">THÔNG TIN PHIM</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Form onSubmit={handleSubmit}>
+                    <Form onSubmit={handleUpdate}>
                         <Row className="align-items-center">
                             <Col sm={3} className="my-1">
                                 <FloatingLabel label="POSTER">
@@ -244,7 +259,7 @@ const AlertForm = (props) => {
                         </Row>
                         <Row className="align-items-center">
                             <Col sm={3} className="my-1">
-                                <MyButton onClick={handleSubmit} title={'UPDATE'} />
+                                <MyButton onClick={handleUpdate} title={'UPDATE'} />
                             </Col>
                         </Row>
                     </Form>

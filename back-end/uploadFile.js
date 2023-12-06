@@ -6,7 +6,7 @@ const configuration = new Configuration({
   });
 const openai = new OpenAIApi(configuration);
 
-//run this first then comment out func call
+//chay ham nay truoc sau do comment lai roi chay ham tiep theo
 async function upload() {
     try {
         const f = await openai.createFile(
@@ -23,11 +23,11 @@ async function upload() {
   
 // upload()
 
-//run this 2nd, wait a bit, then comment out func call and move on
+//chay ham nay thu 2, doi chut, sau do comment lai roi chay ham tiep theo
 async function makeFineTune() {
     try {
         const ft = await openai.createFineTune({
-            training_file: 'file-r5FXYArUGF0H1Tlt2c9Qbryx',
+            training_file: 'file-6batGHjlhIeT1QkLEvxbedQb',
             model: 'davinci'
         });
         console.log(ft);
@@ -37,7 +37,8 @@ async function makeFineTune() {
     }
 }
 // makeFineTune()
-// 3. run,wait a bit, run again and get fine_tuned_model name
+
+//chay ham nay thu 2, doi chut, sau do comment lai roi chay ham tiep theo
 async function listFineTunes() {
     try {
         const modelName = await openai.listFineTunes();
@@ -48,18 +49,9 @@ async function listFineTunes() {
     }
  }
   
-//   listFineTunes()
-// async function deleteFineTune() {
-//     try {
-//       const response = await openai.deleteModel('curie:ft-personal-2023-03-18-18-02-20')
-//       console.log('response: ', response)
-//     } catch (err) {
-//       console.log('err: ', err)
-//     }
-//   }
-  
-//   deleteFineTune()
+  listFineTunes()
 
+//ham nay de test response cua api
 async function run() {
     try {
         const comp = await openai.createCompletion({
@@ -74,5 +66,16 @@ async function run() {
         console.log('err: ', err)
     }
 }
-run();
+// run();
 
+//ham nay kh can chay
+async function deleteFineTune() {
+    try {
+      const response = await openai.deleteModel('curie:ft-personal-2023-03-18-18-02-20')
+      console.log('response: ', response)
+    } catch (err) {
+      console.log('err: ', err)
+    }
+  }
+  
+//   deleteFineTune()

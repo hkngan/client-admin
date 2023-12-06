@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './style.css'
+import './login.style.css'
 import {useNavigate} from 'react-router-dom'
 import {useDispatch} from 'react-redux'
 import {setCredentials} from '../../features/auth/authSlice'
@@ -38,7 +38,6 @@ const AdminLogin = () => {
             }
         }
     }
-
     const content = isLoading ? <h1>Loading...</h1> :(
         <section className='page'>
              <div className="borderBox">

@@ -175,12 +175,12 @@ const AddShowtime = () => {
         icon: 'success',
       });
 
-      setSelectedMovie([]);
-      setSelectedTheater([]);
+      setSelectedMovie(null);
+      setSelectedTheater(null);
       setDay('');
       setTime('');
-      setSelectedRoom([]);
-      setSelectedPrice([]);
+      setSelectedRoom(null);
+      setSelectedPrice(null);
     } catch (error) {
       console.log('Error in handleSubmit', error);
       swal({
@@ -192,6 +192,8 @@ const AddShowtime = () => {
   };
 
   return (
+    <div>
+      <h2 style={{marginTop: 10, textAlign: 'center'}}>Add Showtime</h2>
       <Form onSubmit={handleSubmit}>
           <Row className="align-items-center">
               <Col sm={3} className="my-1">
@@ -291,6 +293,7 @@ const AddShowtime = () => {
               </Col>
           </Row>
       </Form>
+    </div>
   );
 }
 

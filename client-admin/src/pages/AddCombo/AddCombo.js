@@ -48,67 +48,70 @@ const AddCombo = () => {
     console.log(id, name, img, des, price)
 
   return (
-    <Form onSubmit={handleSubmit}>
-    <Row className="align-items-center my-3">
-        <Col sm={3} className="my-1">
-            <FloatingLabel label="POSTER">
-                <Form.Control type="file" onChange={handleImageChange} required />
-            </FloatingLabel>
-        </Col>
-        <Col sm={3} className="my-1">
-            <FloatingLabel label="MÃ COMBO">
-                <Form.Control
-                    type="text"
-                    placeholder="Id movie"
-                    value={id}
-                    onChange={(e) => setId(e.target.value)}
-                    required
-                />
-            </FloatingLabel>
-        </Col>
-    </Row>
-    <Row className="align-items-center">
-        
-        <Col sm={3} className="my-1">
-            <FloatingLabel label="TÊN COMBO">
-                <Form.Control
-                    type="text"
-                    value={name}                            
-                    placeholder="TÊN COMBO"
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                />
-            </FloatingLabel>
-        </Col>
-        <Col sm={3} className="my-1">
-            <FloatingLabel label="MÔ TẢ">
-                <Form.Control
-                    type="text"
-                    value={des}
-                    placeholder="MÔ TẢ"
-                    onChange={(e) => setDes(e.target.value)}
-                    required
-                />
-            </FloatingLabel>
-        </Col>
-    </Row>
-    <Row className="align-items-center">
-        <Col sm={3} className="my-1">
-            <FloatingLabel label="GIÁ COMBO">
-                <Form.Control
-                    type="text"
-                    placeholder="GIÁ"
-                    value={price}
-                    onChange={(e) => setPrice(e.target.value)}
-                    required
-                />
-            </FloatingLabel>
-        </Col>
-        <Col sm={3} className="my-1">
-            <MyButton onClick={handleSubmit} title={'Add'} />
-        </Col>
-    </Row>
-</Form>  )
+      <div>
+          <h3 style={{marginTop: 10, textAlign: 'center'}}>Add Combo</h3>
+          <Form onSubmit={handleSubmit}>
+              <Row className="align-items-center my-3">
+                  <Col sm={3} className="my-1">
+                      <FloatingLabel label="POSTER">
+                          <Form.Control type="file" onChange={handleImageChange} required />
+                      </FloatingLabel>
+                  </Col>
+                  <Col sm={3} className="my-1">
+                      <FloatingLabel label="MÃ COMBO">
+                          <Form.Control
+                              type="text"
+                              placeholder="Id movie"
+                              value={id}
+                              onChange={(e) => setId(e.target.value)}
+                              required
+                          />
+                      </FloatingLabel>
+                  </Col>
+              </Row>
+              <Row className="align-items-center">
+                  <Col sm={3} className="my-1">
+                      <FloatingLabel label="TÊN COMBO">
+                          <Form.Control
+                              type="text"
+                              value={name}
+                              placeholder="TÊN COMBO"
+                              onChange={(e) => setName(e.target.value)}
+                              required
+                          />
+                      </FloatingLabel>
+                  </Col>
+                  <Col sm={3} className="my-1">
+                      <FloatingLabel label="MÔ TẢ">
+                          <Form.Control
+                              type="text"
+                              value={des}
+                              placeholder="MÔ TẢ"
+                              onChange={(e) => setDes(e.target.value)}
+                              required
+                          />
+                      </FloatingLabel>
+                  </Col>
+              </Row>
+              <Row className="align-items-center">
+                  <Col sm={3} className="my-1">
+                      <FloatingLabel label="GIÁ COMBO">
+                          <Form.Control
+                              type="text"
+                              placeholder="GIÁ"
+                              value={price}
+                              onChange={(e) => setPrice(e.target.value)}
+                              required
+                          />
+                      </FloatingLabel>
+                  </Col>
+                  <Col sm={3} className="my-1">
+                      <MyButton onClick={handleSubmit} title={'Add'} />
+                  </Col>
+              </Row>
+          </Form>
+      </div>
+  );
 }
 
 export default AddCombo

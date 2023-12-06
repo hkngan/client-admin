@@ -3,6 +3,8 @@ import {useNavigate} from 'react-router-dom'
 import { useLoginMutation } from '../../features/auth/authApiSlice';
 import { useDispatch } from 'react-redux';
 import { setCredentials } from '../../features/auth/authSlice';
+import '../Login/login.style.css'
+
 const Homepage = () => {
   const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

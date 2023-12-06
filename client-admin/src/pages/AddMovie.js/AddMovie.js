@@ -133,6 +133,8 @@ const AddMovie = () => {
         setImg(e.target.files[0]);
     };
     return (
+    <div>
+        <h2 style={{marginTop: 10, textAlign: 'center'}}>Add Movie</h2>
         <Form onSubmit={handleSubmit}>
             <Row className="align-items-center">
                 <Col sm={3} className="my-1" style={{marginLeft: '10px'}}>
@@ -262,6 +264,7 @@ const AddMovie = () => {
                 </Col>
             </Row>
         </Form>
+    </div>
     );
 };
 export default AddMovie;

@@ -19,3 +19,6 @@
   .icon-buton:hover{
     color: rgba(208, 21, 34, 0.8);
   }
+  .tableContainer{
+    align-items: center;
+  }

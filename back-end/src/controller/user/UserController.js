@@ -4,6 +4,7 @@ const order = require('..//../model/order')
 const JWT = require('jsonwebtoken')
 var {expressjwt: jwt} = require('express-jwt')
 const Stripe = require('stripe')
+const nodemailer = require('nodemailer');
 
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY)
 const { Configuration, OpenAIApi } = require("openai");
@@ -196,7 +197,7 @@ const fineTunedChatController = async (req, res) => {
         const userInput = req.body.userInput;
         console.log("Input:", req.body.userInput)
         const comp = await openai.createCompletion({
-            model: 'davinci:ft-personal-2023-12-04-09-37-37',
+            model: 'davinci:ft-personal-2023-12-06-16-30-09',
             prompt: userInput,
             max_tokens: 210
         });
@@ -235,4 +236,88 @@ const getUserController = async(req, res) => {
         console.log('Error in getUserController func', error)
     }
 }
-module.exports = {registerController, loginController, paymentController, getOrderController, fineTunedChatController, updateInformationController, getUserController}
+const sentVerificationCodes = {};
+const sendOTP = async (req, res) => {
+    try {
+        const { email } = req.body;
+
+        const verificationCode = Math.random().toString(36).substring(7);
+        const transporter = nodemailer.createTransport({
+            port: 5000,
+            service: 'gmail',
+            auth: {
+                user: 'wlucy3026@gmail.com',
+                pass: 'nkwz nclg rjdo mdkw',
+            },
+        });
+
+        const mailOptions = {
+            from: 'CineMagic System',
+            to: email,
+            subject: 'Verify password change',
+            text: `Your verification code is: ${verificationCode}`,
+        };
+
+        await transporter.sendMail(mailOptions);
+        sentVerificationCodes[email] = verificationCode;
+
+        console.log('Email sent successfully');
+        res.status(200).send('Email sent for password change verification');
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+};
+const verifyOTP = async (req, res) => {
+    try {
+        const { email, enteredVerificationCode } = req.body;
+        const correctVerificationCode = sentVerificationCodes[email];
+
+        if (enteredVerificationCode === correctVerificationCode) {
+            res.status(200).send('OTP verified successfully');
+        } else {
+            res.status(401).send('Invalid OTP');
+        }
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+}
+const changePassword = async (req, res) => {
+    try {
+        const { email, newPassword } = req.body;
+        const hashedPassword = await hashPassword(newPassword)
+
+        const updatedUser = await User.findOneAndUpdate(
+            { email },
+            { password: hashedPassword },
+            { new: true }
+        );
+
+        if (updatedUser) {
+            // Đổi mật khẩu thành công
+            res.status(200).send({
+                message: 'Password changed successfully', 
+                updatedUser
+            });
+        } else {
+            // Người dùng không được tìm thấy
+            res.status(404).send('User not found');
+        }
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+};
+module.exports = {
+    registerController, 
+    loginController, 
+    paymentController, 
+    getOrderController, 
+    fineTunedChatController, 
+    updateInformationController, 
+    getUserController, 
+    sendOTP,
+    verifyOTP,
+    changePassword
+}

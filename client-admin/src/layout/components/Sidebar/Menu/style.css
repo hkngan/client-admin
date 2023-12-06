@@ -2,9 +2,9 @@
     display: flex;
     text-decoration: none;
     margin: 10px;
-    align-items: center;
     padding: 10px;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: row;
 }
 .icon{
     margin: 5px;
@@ -13,4 +13,7 @@
 .menuItem:hover{
     background-color: red;
     border-radius: 15px;
+}
+.text{
+    color: white;
 }
