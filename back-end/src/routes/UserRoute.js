@@ -9,7 +9,8 @@ const {
     getUserController, 
     verifyOTP,
     changePassword,
-    sendOTP
+    sendOTP,
+    getOrderDetailController
  } = require('../controller/user/UserController')
 const { isAuth } = require('../middlewares/authMiddleware')
 const router = express.Router()
@@ -24,6 +25,7 @@ router.post('/verify',isAuth, verifyOTP)
 
 router.get('/ticket-list/:id', isAuth, getOrderController)
 router.get('/user-info/:id', isAuth, getUserController)
+router.get('/users/:userId/orders/:orderId',isAuth, getOrderDetailController);
 
 router.put('/update-profile/:id', isAuth, updateInformationController)
 router.put('/change-password', isAuth, changePassword)

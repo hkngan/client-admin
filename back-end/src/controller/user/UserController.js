@@ -191,6 +191,31 @@ const getOrderController = async (req, res) => {
         console.error('Error in getOrderController func', error)
     }
 }
+const getOrderDetailController = async (req, res) => {
+    try {
+        const { userId, orderId } = req.params;
+
+        const orderDetail = await order.findOne({ user: userId, _id: orderId });
+
+        if (!orderDetail) {
+            return res.status(404).send({
+                success: false,
+                message: "Order not found"
+            });
+        }
+
+        // In ra chi tiết đơn hàng
+        console.log(orderDetail);
+
+        return res.status(200).send({ orderDetail });
+    } catch (error) {
+        console.error('Error in getOrderDetailController func', error);
+        return res.status(500).send({
+            success: false,
+            message: "Internal server error"
+        });
+    }
+}
 
 const fineTunedChatController = async (req, res) => {
     try {
@@ -295,13 +320,11 @@ const changePassword = async (req, res) => {
         );
 
         if (updatedUser) {
-            // Đổi mật khẩu thành công
             res.status(200).send({
                 message: 'Password changed successfully', 
                 updatedUser
             });
         } else {
-            // Người dùng không được tìm thấy
             res.status(404).send('User not found');
         }
     } catch (error) {
@@ -319,5 +342,6 @@ module.exports = {
     getUserController, 
     sendOTP,
     verifyOTP,
-    changePassword
+    changePassword,
+    getOrderDetailController
 }

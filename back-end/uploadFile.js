@@ -6,7 +6,6 @@ const configuration = new Configuration({
   });
 const openai = new OpenAIApi(configuration);
 
-//chay ham nay truoc sau do comment lai roi chay ham tiep theo
 async function upload() {
     try {
         const f = await openai.createFile(
@@ -23,7 +22,6 @@ async function upload() {
   
 // upload()
 
-//chay ham nay thu 2, doi chut, sau do comment lai roi chay ham tiep theo
 async function makeFineTune() {
     try {
         const ft = await openai.createFineTune({
@@ -38,7 +36,6 @@ async function makeFineTune() {
 }
 // makeFineTune()
 
-//chay ham nay thu 2, doi chut, sau do comment lai roi chay ham tiep theo
 async function listFineTunes() {
     try {
         const modelName = await openai.listFineTunes();
@@ -51,7 +48,6 @@ async function listFineTunes() {
   
   listFineTunes()
 
-//ham nay de test response cua api
 async function run() {
     try {
         const comp = await openai.createCompletion({
@@ -68,7 +64,6 @@ async function run() {
 }
 // run();
 
-//ham nay kh can chay
 async function deleteFineTune() {
     try {
       const response = await openai.deleteModel('curie:ft-personal-2023-03-18-18-02-20')
